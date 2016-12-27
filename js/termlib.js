@@ -16,6 +16,8 @@
   individual values of `id' must be supplied for multiple terminals.
   `handler' specifies a function to be called for input handling.
   (see `Terminal.prototype.defaultHandler()' and documentation.)
+  
+  
 
   globals defined in this library:
   	Terminal           (Terminal object)
