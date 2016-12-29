@@ -260,6 +260,30 @@ a {
 	display: block;
 }
 
+.title{
+   font-family: "Alegreya SC";
+font-size: 26px;
+position: relative;
+display: inline-block;
+top: 50px;
+left: 30%;
+}
+
+.idioms{
+    float: right;
+    display: inline-block;
+    top: 100px;
+}
+
+table.menu{
+	margin-top: 150px;
+}
+
+img.me{
+	    display: inline-block;
+float: left;
+}
+
 a,a:link,a:visited {
 	text-decoration: none;
 	color: #77dd11;
@@ -268,9 +292,9 @@ a:hover {
 	text-decoration: underline;
 	color: #77dd11;
 }
-a:active {
+a.atual {
 	text-decoration: underline;
-	color: #eeeeee;
+	color: #DEDEDE;
 }
 
 a.termopen,a.termopen:link,a.termopen:visited {
