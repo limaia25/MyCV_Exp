@@ -10,6 +10,7 @@ var helpPage=[
 	'     about_you.... aprenda algo sobre mim',
 	'     education ..... mostra onde eu me graduei',
 	'     experience ..... mostra a minha experiencia no mundo do trabalho',
+	'     thecnology ..... mostra a minha experiencia no mundo do trabalho',
 	'     contacts ..... mostrar os meus contactos ',
 	'	  terminal ..... mostra mais sobre este manual ',
 	'  qualquer outra palavra irá ser ressoado na linha de comando.',
@@ -27,9 +28,7 @@ var aboutTerminalPage=[
 	];
 
 
-var aboutMePage=[
-          '%CS%+r About me %-r%n',
-		  ];
+
 var term = new Array();
 
 function termOpen(n) {
@@ -47,7 +46,7 @@ function termOpen(n) {
 				frameWidth: 1,
 				frameColor: '#aaaaaa',
 				bgColor: '#eeeeee',
-				greeting: 'Terminal is ready. Press `help` to help page',
+				greeting: 'Este termnal está numa fase testes, por favor tente o idioma de ingles',
 				handler: termHandler,
 				exitHandler: termChromeHide
 			}
