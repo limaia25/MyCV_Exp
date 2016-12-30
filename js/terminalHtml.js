@@ -4,13 +4,12 @@ var helpPage=[
 	'  Use one of the following commands:',
 	'     clear .... clear the terminal',
 	'     exit ..... close the terminal (or <ESC>)',
-	'     id ....... show terminal\'s id',
-	'     switch ... switch to other terminal',
 	'     help ..... show this help page',
 	'     about_you.... learn somethings about me',
 	'     education ..... show where I graduate',
 	'     experience ..... show my experience on work world',
-	'     contacts ..... show my contacts ',
+	'     thecnology ..... show the thecnology  I\'m comfortable with',
+	'     contacts ..... show my contacts on a new window ',
 	'	  terminal ..... show more about this terminal ',
 	'  other input will be echoed to the terminal.',
 	' '
@@ -29,7 +28,40 @@ var aboutTerminalPage=[
 
 var aboutMePage=[
           '%CS%+r About me %-r%n',
+'With my experience, so far, I\'ve three rules:',
+'- It\'s not necessary to reinvent the wheel, search how to do it!',
+'- I\'m not a castle builder, I do not build a big castle stone by stone: If I want to build something,',
+'I build the smallest castle and after that I build a castle bigger than before.',
+'- You do not know everything, and I do not know anything (you and I are interchangable).'
 		  ];
+		  
+var experiencePage =[
+'%CS%+r My experience %-r%n',
+'Since Nov/2015',
+' -Developing Web application of classification for hospital inpatient care',
+'Since Nov/2014:',
+' -Developing Web application of registration and consulting of health providers',
+'Since Dec/2012 to Nov/2014',
+' -Researching about new methods of analysis of Ressonance Magnectic images',
+]
+
+		  
+var thecnologyPage =[
+'%CS%+r Thecnology and plataform%-r%n',
+'*Java 7 and Eclipse IDE',
+'  -2,5 years of experience, learned while graduating but improved at work experience',
+'*Oracle SQL and PL/SQL',
+'  -2,5 years of experience, learned while graduating but improved at work experience',
+'*Wicket Apache:',
+'  -2 years of experience, learned while developing the web application',
+'*HTML, CSS and JavaScript',
+'  -2 years of experience, learned while graduating but improved at work experience, and at some hobbies',
+]
+
+
+var typeHelp = [
+'Press `help` to help page'
+]
 var term = new Array();
 
 function termOpen(n) {
@@ -73,11 +105,7 @@ function termHandler() {
 	this.newLine();
 	var cmd = this.lineBuffer;
 	if (cmd != '') {
-		if (cmd=='switch') {
-			var other=(this.id==1)? 2:1;
-			termOpen(other);
-		}
-		else if (cmd=='clear') {
+		if (cmd=='clear') {
 			this.clear();
 		}
 		else if (cmd=='exit') {
@@ -88,16 +116,37 @@ function termHandler() {
 		}
 		else if (cmd=='terminal') {
 			this.write(aboutTerminalPage);
+			this.newLine();
+			this.write(typeHelp);
 		}
 		else if (cmd == 'about_you') {
+			this.write(aboutMePage);
+			this.newLine();
+			this.write(typeHelp);
+		}
+		else if (cmd == 'experience') {
+			this.write(experiencePage);
+			this.newLine();
+			this.write(typeHelp);
+		}
+		else if (cmd == 'thecnology') {
+			this.write(thecnologyPage);
+			this.newLine();
+			this.write(typeHelp);
+		}
+		else if (cmd == 'contacts') {
 		this.type('You typed: '+cmd);
 		this.newLine();
-		this.type('Wait 5 seconds, you will be redirect to another page. If you want to came back here: type backspace ');
+		this.type('Wait 5 seconds, you will be redirect to contact page. ');
 		window.setTimeout(function(){
-				window.location.href = "http://stackoverflow.com";
-		}, 5000);
+				window.location.href = "contact.html";
+		}, 5000);		}
+		else {
+			this.type('You typed: '+cmd);
+			this.newLine();
+			this.write(typeHelp);
 		}
-		else this.type('You typed: '+cmd);
+		
 	}
 	this.prompt();
 }
@@ -118,7 +167,7 @@ function termSetChromeState(n, v) {
 
 function termChromeShow(n) {
 	var div = 'terminal'+n;
-	TermGlobals.setElementXY(div, 210+n*20, 30+n*20);
+	TermGlobals.setElementXY(div, 210+n*20, 200+n*20);
 	TermGlobals.setVisible(div,1);
 	if (document.getElementById) {
 		var obj = document.getElementById(div);
@@ -164,33 +213,33 @@ function termBringToFront(n) {
 
 var termToSet=0;
 
-function termConfigure(n) {
-	var t=term[n];
-	if (parseFloat(t.version)<1.03) {
-		alert('This utility requires termlib.js 1.03 or better.');
-		return;
-	}
-	var color = t.colorsetting;
-	termToSet = n;
-	var f=document.forms.settingvalues;
-	f.rows.value=t.conf.rows;
-	f.cols.value=t.conf.cols;
-	f.color[color-1].checked=true;
-	var div='settingsdialog';
-	TermGlobals.setVisible(div,1);
-	if (document.getElementById) {
-		var obj = document.getElementById(div);
-		if (obj) obj.className = 'termShow';
-	}
-	else if (document.all) {
-		var obj = document.all[div];
-		if (obj) obj.className = 'termShow';
-	}
-	var td='terminal'+n;
-	objs = (document.getElementById)? document.getElementById(td):document.all[td];
-	if (obj) TermGlobals.setElementXY(div, parseInt(objs.style.left)+26, parseInt(objs.style.top)+26);
-	TermGlobals.keylock=true;
-}
+// function termConfigure(n) {
+	// var t=term[n];
+	// if (parseFloat(t.version)<1.03) {
+		// alert('This utility requires termlib.js 1.03 or better.');
+		// return;
+	// }
+	// var color = t.colorsetting;
+	// termToSet = n;
+	// var f=document.forms.settingvalues;
+	// f.rows.value=t.conf.rows;
+	// f.cols.value=t.conf.cols;
+	// f.color[color-1].checked=true;
+	// var div='settingsdialog';
+	// TermGlobals.setVisible(div,1);
+	// if (document.getElementById) {
+		// var obj = document.getElementById(div);
+		// if (obj) obj.className = 'termShow';
+	// }
+	// else if (document.all) {
+		// var obj = document.all[div];
+		// if (obj) obj.className = 'termShow';
+	// }
+	// var td='terminal'+n;
+	// objs = (document.getElementById)? document.getElementById(td):document.all[td];
+	// if (obj) TermGlobals.setElementXY(div, parseInt(objs.style.left)+26, parseInt(objs.style.top)+26);
+	// TermGlobals.keylock=true;
+// }
 
 function closeSettings(state) {
 	var t=term[termToSet];
