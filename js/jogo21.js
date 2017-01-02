@@ -65,7 +65,7 @@ function computerTurn(){
 			}
 		}
 		if(valTotal==21){
-			alert("You Win!!");
+			alert("I Win!!");
 			numeroTentativas=0;
 			valTotal=0;
 		}
