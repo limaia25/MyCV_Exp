@@ -1,8 +1,9 @@
 <html>
 <head>
 	<title>Liliana Maia CV</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/jquery-3.1.1.min"></script>
+	<script language="JavaScript" type="text/javascript"  src="js/jogo21.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/terminalCv.css">
 	
@@ -26,32 +27,33 @@
 </div>
 </div>
 <div class="corpo">
-
-
-<ul class="nav nav-pills  col-md-offset-3 col-md-8 col-lg-offset-3  col-lg-8" role="tablist">
+<ul class="nav nav-pills  col-md-offset-3 col-md-8 col-lg-offset-3 col-lg-8 " role="tablist">
         <li role="presentation" class="col-md-2 col-lg-2"><a href="index.html">Terminal</a></li>
-        <li role="presentation" class="active col-md-2 col-lg-2"><a href="contact.html">Contact</a></li>
+        <li role="presentation" class="col-md-2 col-lg-2"><a href="contact.html">Contact</a></li>
         <li role="presentation" class="col-md-2 col-lg-2"><a href="index.html">My Cv</a></li>
-		<li role="presentation" class="col-md-5 col-lg-5"><a href="index.html">Do you want to play?</a></li>
+		<li role="presentation" class="active col-md-5 col-lg-5"><a href="index.html">Do you want to play?</a></li>
     </ul>
+	
+<div>
+	<button id="myTurn" class="bloco btn btn-lg btn-default" onclick="javascript:userturn()">One more!</button>
+	<button id="changeTurn" class="bloco btn btn-lg btn-default" onclick="changeUser()"  >&gt; Change turn! &nbsp;</button>
+	<div>O valor total até agora é:</div>
+	<input id="valorTotal"></input>
 
-<div id ="blocoContato" class="blocoContato col-md-4 col-lg-4 ">
-	<div class="col-md-1 col-lg-1">
-	<a href="https://pt.linkedin.com/in/liliana-maia-a4486327"  class="logo">
-	<img src="img/linkdin-14px.png" alt="linkdin" height="25" width="25"></a>
-	</div>
-	<div class="col-md-1 col-lg-1">
-	<a href="https://github.com/limaia25"  class="logo">
-	<img src="img/github.png" alt="github" height="25" width="25"></a>
-	</div>
-	<div class="col-md-1 col-lg-1">
-	<a href="mailto:limaia.25@gmail.com"  class="logo">
-	<img src="img/gmail.png" alt="gmail" height="25" width="30"></a>
-	</div>
-</div>
+<div>
 
 
   <!--Created by: Liliana Maia-->
+
+<!-- Terminal based on: -->
+<!-- ****  mass:werk termlib.js - JS-WebTerminal Object v1.66  **** -->
+
+  <!-- (c) Norbert Landsteiner 2003-2015 -->
+  <!-- mass:werk - media environments -->
+  <!-- <http://www.masswerk.at> -->
+  
+
+
 
 </body>
 </html>

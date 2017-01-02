@@ -6,11 +6,24 @@ body,p,a,td {
 body{
 	font-family: courier,fixed,swiss,sans-serif;
 	font-size: 12px;
-	color: #1C1D21;
+	background-color: #1C1D21;
 }
 
 a {
 	font-size: 20px;
+}
+button.btn{
+	margin-top: 20px;
+    background-color: #3A635B;
+    border-color: transparent;
+    color: black;
+}
+ul.nav{
+	margin-bottom:20px;
+}
+#blocoContato{
+	margin-top: 20px;
+	float: right;
 }
 .lh15 {
 	line-height: 15px;
@@ -274,7 +287,7 @@ a {
     color: #F7F7F2;
 position: relative;
 display: inline-block;
-top: 50px;
+top: 20px;
 left: 30%;
 }
 
