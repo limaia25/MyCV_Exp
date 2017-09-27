@@ -5,7 +5,7 @@ var helpPage=[
 	'     clear .... clear the terminal',
 	'     exit ..... close the terminal (or <ESC>)',
 	'     help ..... show this help page',
-	'     about_you.... learn somethings about me',
+	'     aboutyou.... learn somethings about me',
 	'     education ..... show where I graduate',
 	'     experience ..... show my experience on work world',
 	'     thecnology ..... show the thecnology  I\'m comfortable with',
