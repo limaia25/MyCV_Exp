@@ -6,7 +6,7 @@
  - **img** pictures directory
  - **js** javascript's directory
  - **css** style files directory
- - **out** *but in progress to <eng>* the files html in english
+ - **out** *but in progress to eng* the files html in english
 
 
 
