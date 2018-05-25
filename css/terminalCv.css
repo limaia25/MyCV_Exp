@@ -25,6 +25,9 @@ ul.nav{
 	margin-top: 20px;
 	float: right;
 }
+div.bloco.left{
+	clear:both;
+}
 .lh15 {
 	line-height: 15px;
 }
