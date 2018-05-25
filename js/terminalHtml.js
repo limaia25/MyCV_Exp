@@ -28,11 +28,11 @@ var aboutTerminalPage=[
 
 var aboutMePage=[
           '%CS%+r About me %-r%n',
-'With my experience, so far, I\'ve three rules:',
+'With my experience, so far, I\'ve three rules (that I learn or read):',
 '- It\'s not necessary to reinvent the wheel, search how to do it!',
 '- I\'m not a castle builder, I do not build a big castle stone by stone: If I want to build something,',
 'I build the smallest castle and after that I build a castle bigger than before.',
-'- You do not know everything, and I do not know anything (you and I are interchangable).'
+'- You do not know everything, and I do not know anything.'
 		  ];
 		  
 var experiencePage =[
@@ -119,7 +119,7 @@ function termHandler() {
 			this.newLine();
 			this.write(typeHelp);
 		}
-		else if (cmd == 'about_you') {
+		else if (cmd == 'aboutyou') {
 			this.write(aboutMePage);
 			this.newLine();
 			this.write(typeHelp);
