@@ -40,7 +40,7 @@ var experiencePage =[
 'Since Nov/2014:',
 ' -Developing Web application of registration and consulting of health providers',
 'Since Nov/2015 to Fev/2016',
-' -Developing Web application of classification for hospital inpatient care',
+' -Developing Web application of classification for hospital morbility',
 'Since Dec/2012 to Nov/2014',
 ' -Researching about new methods of analysis of Ressonance Magnectic images',
 ]
@@ -56,6 +56,14 @@ var thecnologyPage =[
 '  -4 years of experience, learned while developing  web application (work experience)',
 '*HTML, CSS and JavaScript',
 '  -3 years of experience, learned while graduating but improved at work experience, and at some hobbies (like this one)',
+]
+
+var educationPage =[
+'%CS%+rGraduation %-r%n',
+'Since Sep/2007 to Dec/20017:',
+' -Integrated Master in Biomedical engineering - master medical informatics',
+'    + Study areas: engineering, electronics, biology, chemistry'
+'    + Thesis about: Investigation of Imagiology applications and creatting an automatic way to make the co-registration and the tractography computation '
 ]
 
 
@@ -131,6 +139,11 @@ function termHandler() {
 		}
 		else if (cmd == 'thecnology') {
 			this.write(thecnologyPage);
+			this.newLine();
+			this.write(typeHelp);
+		}
+		else if (cmd == 'education') {
+			this.write(educationPage);
 			this.newLine();
 			this.write(typeHelp);
 		}
