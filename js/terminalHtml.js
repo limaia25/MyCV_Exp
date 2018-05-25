@@ -28,19 +28,19 @@ var aboutTerminalPage=[
 
 var aboutMePage=[
           '%CS%+r About me %-r%n',
-'With my experience, so far, I\'ve three rules:',
+'With my experience, so far, I\'ve three rules (that I learn or read):',
 '- It\'s not necessary to reinvent the wheel, search how to do it!',
 '- I\'m not a castle builder, I do not build a big castle stone by stone: If I want to build something,',
 'I build the smallest castle and after that I build a castle bigger than before.',
-'- You do not know everything, and I do not know anything (you and I are interchangable).'
+'- You do not know everything, and I do not know anything.'
 		  ];
 		  
 var experiencePage =[
 '%CS%+r My experience %-r%n',
-'Since Nov/2015',
-' -Developing Web application of classification for hospital inpatient care',
 'Since Nov/2014:',
 ' -Developing Web application of registration and consulting of health providers',
+'Since Nov/2015 to Fev/2016',
+' -Developing Web application of classification for hospital inpatient care',
 'Since Dec/2012 to Nov/2014',
 ' -Researching about new methods of analysis of Ressonance Magnectic images',
 ]
@@ -48,14 +48,14 @@ var experiencePage =[
 		  
 var thecnologyPage =[
 '%CS%+r Thecnology and plataform%-r%n',
-'*Java 7 and Eclipse IDE',
-'  -2,5 years of experience, learned while graduating but improved at work experience',
+'*Java and Eclipse IDE',
+'  - 5 years of experience, learned while graduating but improved at work experience',
 '*Oracle SQL and PL/SQL',
-'  -2,5 years of experience, learned while graduating but improved at work experience',
+'  - 5 years of experience, learned while graduating but improved at work experience',
 '*Wicket Apache:',
-'  -2 years of experience, learned while developing the web application',
+'  -4 years of experience, learned while developing  web application (work experience)',
 '*HTML, CSS and JavaScript',
-'  -2 years of experience, learned while graduating but improved at work experience, and at some hobbies',
+'  -3 years of experience, learned while graduating but improved at work experience, and at some hobbies (like this one)',
 ]
 
 
@@ -119,7 +119,7 @@ function termHandler() {
 			this.newLine();
 			this.write(typeHelp);
 		}
-		else if (cmd == 'about_you') {
+		else if (cmd == 'aboutyou') {
 			this.write(aboutMePage);
 			this.newLine();
 			this.write(typeHelp);
