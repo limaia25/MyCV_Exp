@@ -10,7 +10,7 @@ var helpPage=[
 	'     experience ..... show my experience on work world',
 	'     thecnology ..... show the thecnology  I\'m comfortable with',
 	'     contacts ..... show my contacts on a new window ',
-	'	  terminal ..... show more about this terminal ',
+	'	terminal ..... show more about this terminal ',
 	'  other input will be echoed to the terminal.',
 	' '
 ];
