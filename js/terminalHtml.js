@@ -17,7 +17,7 @@ var helpPage=[
 
 var aboutTerminalPage=[
 	'%CS%+r About this terminal%-r%n',
-	' This terminal wasn´t made totally by me: Reinvent the wheel, for what?',
+	' This terminal wasn´t made totally by me: Reinventing the wheel, for what?',
     ' This terminal is based on:',
 	'Norbert Landsteiner / Vienna, Aug 2005 - Jan 2010',
     'mass:werk - media environments',
@@ -28,10 +28,10 @@ var aboutTerminalPage=[
 
 var aboutMePage=[
           '%CS%+r About me %-r%n',
-'With my experience, so far, I\'ve three rules (that I learn or read):',
+'With my experience, so far, I\'ve three rules (that I had learnd or had read):',
 '- It\'s not necessary to reinvent the wheel, search how to do it!',
 '- I\'m not a castle builder, I do not build a big castle stone by stone: If I want to build something,',
-'I build the smallest castle and after that I build a castle bigger than before.',
+'I build the smallest castle and after that, I will build a castle bigger than before.',
 '- You do not know everything, and I do not know anything.'
 		  ];
 		  
@@ -39,10 +39,13 @@ var experiencePage =[
 '%CS%+r My experience %-r%n',
 'Since Nov/2014:',
 ' -Developing Web application of registration and consulting of health providers',
+'Used thecnologies/terminologies:: Java 8, SQL, Apache Wicket, Hibernate'
 'Since Nov/2015 to Fev/2016',
 ' -Developing Web application of classification for hospital inpatient care',
+'Used thecnologies/terminologies: Java 8, SQL, Apache Wicket, Jetty, REST'
 'Since Dec/2012 to Nov/2014',
 ' -Researching about new methods of analysis of Ressonance Magnectic images',
+'Used thecnologies/terminologies:: Java 8, SQL, Apache Wicket, Jetty, REST'
 ]
 
 		  
@@ -52,7 +55,7 @@ var thecnologyPage =[
 '  - 5 years of experience, learned while graduating but improved at work experience',
 '*Oracle SQL and PL/SQL',
 '  - 5 years of experience, learned while graduating but improved at work experience',
-'*Wicket Apache:',
+'*Apache Wicket:',
 '  -4 years of experience, learned while developing  web application (work experience)',
 '*HTML, CSS and JavaScript',
 '  -3 years of experience, learned while graduating but improved at work experience, and at some hobbies (like this one)',
