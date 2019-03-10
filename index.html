@@ -35,11 +35,11 @@
 		<li role="presentation" class="col-md-5 col-lg-5"><a href="playPage.html">Do you want to play?</a></li>
     </ul>
 	
-	<button class="bloco btn btn-lg btn-default" onclick="javascript:termOpen(1)" onfocus="if(this.blur)this.blur();" onmouseover="window.status='terminal 1'; return true" onmouseout="window.status=''; return true" class="termopen">&gt; click here to open... &nbsp;</button>
+	<button class="bloco btn btn-lg btn-default" onclick="termOpen(1)" onfocus="if(this.blur)this.blur();" onmouseover="window.status='terminal 1'; return true" onmouseout="window.status=''; return true" class="termopen">&gt; click here to open... &nbsp;</button>
 
 <div id="terminal1" style="position:absolute; visibility: hidden; z-index:1" class="termHidden"><table class="termOuterChrome" onmouseup="termBringToFront(1)" cellpadding="1" cellspacing="0"><tr><td><table class="termInnerChrome" cellpadding="0" cellspacing="0">
 	<tr><td class="termHeaderActive" onmousedown="dragTerm(1); return false" id="termHeader1">Terminal</td></tr>
-	<tr><td class="termMenuPane"><a href="javascript:termClose(1)" onfocus="if(this.blur)this.blur();" class="termMenu">Close</a></td></tr>
+	<tr><td class="termMenuPane"><a href="termClose(1)" onfocus="if(this.blur)this.blur();" class="termMenu">Close</a></td></tr>
 	<tr><td class="termBody"><div id="termDiv1" style="position:relative;"></div></td></tr>
 </table></td></tr>
 </table></div>
